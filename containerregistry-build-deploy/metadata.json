@@ -1,0 +1,11 @@
+{
+    "$schema": "https://aka.ms/azure-quickstart-templates-metadata-schema#",
+    "type": "QuickStart",
+    "itemDisplayName": "Container Registry- Create, Build, Push and Deploy",
+    "description": "This template creates azure container registry, build a docker container image, push and deploy a single Linux container accessible via a public IP using Azure Container Instances.",
+    "summary": "This template demonstrates how to build docker container image using azure container registry tasks.",
+    "githubUsername": "mnltejaswini",
+    "dateUpdated": "2019-03-08"
+  }
+  
+  
