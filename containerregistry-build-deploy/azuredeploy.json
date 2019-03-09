@@ -112,7 +112,7 @@
         "properties" : {}
       },
       {
-        "name": "[variables('runRequestName')]",
+        "name": "[concat(parameters('acrName'), '/', variables('runRequestName'))]",
         "type": "Microsoft.ContainerRegistry/registries/runRequests",
         "apiVersion": "2019-04-01",
         "location": "[parameters('location')]",
@@ -139,7 +139,7 @@
         "apiVersion": "2018-10-01",
         "location": "[parameters('location')]",
         "dependsOn": [
-            "[resourceId('Microsoft.ContainerRegistry/registries/runRequests', variables('runRequestName'))]"
+            "[resourceId('Microsoft.ContainerRegistry/registries/runRequests', parameters('acrName'), variables('runRequestName'))]"
         ],
         "properties": {
           "containers": [
